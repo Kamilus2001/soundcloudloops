@@ -3,8 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import time
-
-location = 'D:/chromedriver/chromedriver.exe'
+#in this file i was trying to make loop. Final code is in final.py file
+location = 'your_chrome_driver_direction'
 driver = webdriver.Chrome(location)
 driver.get('https://soundcloud.com/teamsesh/bones-tempo-prod-by-eric-dingus')
 #"//div[@class='playbackTimeline__timePassed']"
