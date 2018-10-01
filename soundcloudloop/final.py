@@ -7,7 +7,7 @@ from time import time
 class SCLOOP(object):
     def __init__(self, pagelink):
         self.link = pagelink
-        location = 'D:/chromedriver/chromedriver.exe'
+        location = 'D:/chromedriver/chromedriver.exe' #here you need to add direction of your chromedriver.exe
         self.driver = webdriver.Chrome(location)
         self.driver.get(self.link)
         self.minutes = ""
@@ -59,4 +59,5 @@ class SCLOOP(object):
     def exit(self):
         self.driver.quit()
 #to loop song faster do this \/
-strona  = SCLOOP('https://soundcloud.com/tadeusz-kowalski-714978308/killem-all/s-HCHfm').loopsong()
+#add your favourite to the argument of the class
+loop  = SCLOOP('https://soundcloud.com/tadeusz-kowalski-714978308/krzeptowcon').loopsong()
